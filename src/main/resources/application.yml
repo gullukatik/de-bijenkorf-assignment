@@ -1,0 +1,17 @@
+predefined:
+  image:
+    types:
+      - name: thumbnail
+        height: 200
+        width: 200
+        quality: 50
+        scaleType: FILL
+        fillColor: /#000000
+        type: JPG
+      - name: banner
+        height: 200
+        width: 400
+        quality: 75
+        scaleType: FILL
+        fillColor: /#000000
+        type: PNG
