@@ -25,7 +25,9 @@ aws:
   secret-key:
 
 logdb:
-  endpoint:
+  endpoint: jdbc:postgresql://localhost:5432/local_db?currentSchema=logging
   name:
-  username:
-  password:
+  username: gullu
+  password: 1q2w3e4r
+logging:
+  config: src/main/resources/log4j2-dev.xml
