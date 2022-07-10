@@ -31,3 +31,7 @@ logdb:
   password: 1q2w3e4r
 logging:
   config: src/main/resources/log4j2-dev.xml
+
+server:
+  error:
+    include-message: always

@@ -29,3 +29,7 @@ logdb:
   name:
   username:
   password:
+
+server:
+  error:
+    include-message: always
