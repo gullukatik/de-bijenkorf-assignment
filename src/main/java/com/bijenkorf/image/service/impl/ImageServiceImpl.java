@@ -72,7 +72,7 @@ public class ImageServiceImpl implements ImageService {
     }
 
     //Mock
-    private byte[] optimizeImage(byte[] originalImage, String filePath, String reference) {
+    public byte[] optimizeImage(byte[] originalImage, String filePath, String reference) {
         try {
             BufferedImage image = ImageIO.read(new File("src/main/resources/images/arandompicture_optimized.jpg"));
             ByteArrayOutputStream outStreamObj = new ByteArrayOutputStream();
@@ -91,7 +91,7 @@ public class ImageServiceImpl implements ImageService {
     }
 
     //Mock
-    private byte[] downloadImageFromOriginalSource(String reference) {
+    public byte[] downloadImageFromOriginalSource(String reference) {
         String imagePath = generateFilePath(reference, ORIGINAL);
         try {
             BufferedImage image = ImageIO.read(new File("src/main/resources/images/arandompicture.jpg"));
